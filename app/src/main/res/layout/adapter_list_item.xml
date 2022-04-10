@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- John Brown S1917384 -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/relativeLayout2"
+        android:orientation="vertical"
+        android:background="@drawable/card_gradient"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:textAppearance="@color/material_dynamic_primary0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_below="@+id/txtTitle"
+            android:maxLines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textAppearance="@color/material_dynamic_primary0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txtGeorss"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:textAppearance="@color/material_dynamic_primary0"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout2"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txtPubDate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="PubDate"
+            android:textSize="10sp"
+            android:textAppearance="@color/material_dynamic_primary0"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
